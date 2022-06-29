@@ -1,6 +1,6 @@
 package parcial3.Decorator;
 
-public class CelularSamsung implements ICelular {
+public class CelularXiaomi implements ICelular {
 
    // (ram, almacenamiento y cpu) y precio
 
@@ -9,8 +9,8 @@ public class CelularSamsung implements ICelular {
     private int precio;
     private int cpunroProcesadores;
 
-    public CelularSamsung(String almacenamiento, int precio,int cpunroProcesadores) {
-        this.marca = "Samsung";
+    public CelularXiaomi(String almacenamiento, int precio, int cpunroProcesadores) {
+        this.marca = "Xiaomi";
         this.almacenamiento = almacenamiento;
         this.precio = precio;
         this.cpunroProcesadores = cpunroProcesadores;
@@ -18,17 +18,16 @@ public class CelularSamsung implements ICelular {
 
     @Override
     public void showInfo() {
-        System.out.println("Celular Samsung");
+        System.out.println("Celular Xiaomi");
         System.out.println("Marca: " + marca);
         System.out.println("Almacenamiento: " + almacenamiento);
         System.out.println("Precio: " + precio);
         System.out.println("CPU, Nro de procesadores: " + cpunroProcesadores);
-
     }
 
     @Override
     public void operation() {
-        System.out.println("Celular Samsung> operation -> realizando operacion");
+        System.out.println("Celular Xiaomi> operation -> realizando operacion");
     }
 
     @Override

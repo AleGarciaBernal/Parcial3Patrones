@@ -3,5 +3,4 @@ tienen atributos de características de recursos (ram, almacenamiento y cpu) don
 decorar estos celulares con :
 carcasa (precio) incrementa el precio del celular,
 vidrio templado que incrementa el precio de celular ,
-memoria externa que incremente el precio del celular y la
-memoria de almacenamiento.
+memoria externa que incremente el precio del celular y la memoria de almacenamiento.

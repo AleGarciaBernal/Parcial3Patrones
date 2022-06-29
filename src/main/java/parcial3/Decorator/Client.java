@@ -4,22 +4,48 @@ public class Client {
 
     public static void main(String[]args){
 
-        ICelular personaje= new CelularSamsung("Isindur", "Espada", 1);
-        personaje.setCpunroProcesadores(10);
-        personaje.setPuntosAtaque(10);
-        personaje.setPuntosDefensa(10);
-        personaje.setPuntosRegeneracion(10);
+        System.out.println("--------------------------------------------------------------------------------");
 
-        personaje.showInfo();
+        ICelular celularSamsung= new CelularSamsung("1 Tera", 1000, 4);
 
-        personaje=new MemoriaExterna(personaje,"Hacha");
+        celularSamsung.showInfo();
 
-        personaje=new Escudo(personaje);
+        celularSamsung=new MemoriaExterna(celularSamsung,"5 gigabytes", 100);
+        celularSamsung=new VidrioTemplado(celularSamsung,100);
+        celularSamsung=new Carcasa(celularSamsung,20);
 
-        personaje=new PocionCuracion(personaje);
+        celularSamsung.operation();
+        celularSamsung.showInfo();
 
-        personaje.operation();
-        personaje.showInfo();
+        System.out.println("--------------------------------------------------------------------------------");
+
+        ICelular celularApple= new CelularApple("250 gigasbytes", 1000, 4);
+
+        celularApple.showInfo();
+
+        celularApple=new MemoriaExterna(celularApple,"3 gigabytes",30);
+        celularApple=new VidrioTemplado(celularApple,500);
+        celularApple=new Carcasa(celularApple,150);
+
+        celularApple.operation();
+        celularApple.showInfo();
+
+        System.out.println("--------------------------------------------------------------------------------");
+
+        ICelular celularXiaomi= new CelularXiaomi("10 gigasbytes", 1000, 4);
+
+        celularXiaomi.showInfo();
+
+        celularXiaomi=new MemoriaExterna(celularXiaomi,"5 gigabytes",50);
+        celularXiaomi=new VidrioTemplado(celularXiaomi,50);
+        celularXiaomi=new Carcasa(celularXiaomi,10);
+
+        celularXiaomi.operation();
+        celularXiaomi.showInfo();
+
+
+
+
 
 
     }

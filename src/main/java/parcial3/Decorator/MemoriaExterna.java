@@ -3,27 +3,24 @@ package parcial3.Decorator;
 public class MemoriaExterna extends Decorator {
 
     private String memoriaExterna;
+    private int precioMemoriaExterna;
 
-    public MemoriaExterna(ICelular personaje, String memoriaExterna) {
+    public MemoriaExterna(ICelular personaje, String memoriaExterna, int precioMemoriaExterna) {
         super(personaje);
         this.memoriaExterna = memoriaExterna;
+        this.precioMemoriaExterna = precioMemoriaExterna;
     }
 
     @Override
     public void operation() {
-        System.out.println("");
         super.operation();
         addBehavior();
-        super.setAlmacenamiento("Memoria Interna: "+super.getAlmacenamiento()+" "+memoriaExterna);
-        super.setPrecio(super.getPrecio()*2);
-        int porcentaje= (int)(super.getPuntosAtaque()*(30.0f/100.0f));
-        super.setPuntosAtaque(porcentaje+super.getPuntosAtaque());
-
+        super.setAlmacenamiento("Memoria Interna: "+super.getAlmacenamiento()+", Memoria Externa: "+memoriaExterna);
+        super.setPrecio(super.getPrecio()+precioMemoriaExterna);
     }
 
 
     public void addBehavior(){
-        System.out.println("                        ");
         System.out.println("--Añadiendo memoria externa--");
     }
 
