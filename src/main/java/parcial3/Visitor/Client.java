@@ -11,7 +11,8 @@ public class Client {
         Cochabamba cochabamba = new Cochabamba(10000, 10,"Templado", 500);
 
         turista.showInfo();
-
+//hola
+        //ahola
         santaCruz.accept(turista);
         cochabamba.accept(turista);
         laPaz.accept(turista);
