@@ -29,7 +29,11 @@ public class Client {
 
         celularApple.operation();
         celularApple.showInfo();
-
+        celularSamsung.showInfo();
+        celularApple.showInfo();
+djaaa
+        eaekhka
+        jhzk
         System.out.println("--------------------------------------------------------------------------------");
 
         ICelular celularXiaomi= new CelularXiaomi("10 gigasbytes", 1000, 4);
